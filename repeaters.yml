@@ -1,0 +1,169 @@
+groups:
+  # Maxlen....14
+  World:          1
+  # Not sure why this isn't Europe?
+  #americanexceptionalism i guess
+  Local:          2
+  North America:  3
+  World English:  13
+
+  # States
+  Alabama:        3101
+  Alaska:         3102
+  Arizona:        3104
+  Arkansas:       3105
+  California:     3106
+  Colorado:       3108
+  Connecticut:    3109
+  Deleware:       3110
+  D.C.:           3111
+  Florida:        3112
+  Georgia:        3113
+  Hawaii:         3115
+  Idaho:          3116
+  Illinois:       3117
+  Indiana:        3118
+  Iowa:           3119
+  Kansas:         3120
+  Kentucky:       3121
+  Louisiana:      3122
+  Maine:          3123
+  Maryland:       3124
+  Massachusetts:  3125
+  Michigan:       3126
+  Minnesota:      3127
+  Mississippi:    3128
+  Missouri:       3129
+  Montana:        3130
+  Nebraska:       3131
+  Nevada:         3132
+  New Hampshire:  3133
+  New Jersey:     3134
+  New Mexico:     3135
+  New York:       3136
+  North Carolina: 3137
+  North Dakota:   3138
+  Ohio:           3139
+  Oklahoma:       3140
+  Oregon:         3141
+  Pennsylvania:   3142
+  Rhode Island:   3144
+  South Carolina: 3145
+  South Dakota:   3146
+  Tennessee:      3147
+  Texas:          3148
+  Utah:           3149
+  Vermont:        3150
+  Virginia:       3151
+  Washington:     3153
+  West Virginia:  3154
+  Wisconsin:      3155
+  Wyoming:        3156
+
+  # US Regions
+  Midwest:        3169
+  Northeast:      3172
+  Mid-Atlantic:   3173
+  Southeast:      3174
+  TX/OK Region:   3175
+  Southwest:      3176
+  Mountain:       3177
+
+groupsets:
+  md:
+    - Local
+    - Maryland
+    - Mid-Atlantic
+    - North America
+    - World English
+    - World
+
+  nc:
+    - Local
+    - North Carolina
+    - Southeast
+    - North America
+    - World English
+    - World
+
+  va:
+    - Local
+    - Virginia
+    - Mid-Atlantic
+    - North America
+    - World English
+    - World
+
+  pa:
+    - Local
+    - Pennsylvania
+    - Northeast
+    - North America
+    - World English
+    - World
+
+repeaters:
+  N3JFW Rockville:
+    frequency: "442.4875"
+    offset: "+5.000"
+    color: 1
+    groupset: md
+  N3QEM Herndon:
+    frequency: "442.43750"
+    offset: "+5.000"
+    color: 1
+    groupset: va
+  N3CDY OwingsM:
+    frequency: "449.07500"
+    offset: "-5.000"
+    color: 1
+    groupset: md
+  WA4FC Chrlttsvl:
+    frequency: "444.91250"
+    offset: "+5.000"
+    color: 1
+    groupset: va
+
+Digital Base Channel:
+  AdmitCriteria: "Color code"
+  AllowTalkaround: "Off"
+  Autoscan: "Off"
+  Bandwidth: "12.5"
+  ChannelMode: "Digital"
+  CompressedUdpDataHeader: "On"
+  CtcssDecode: "None"
+  CtcssEncode: "None"
+  DataCallConfirmed: "Off"
+  Decode1: "Off"
+  Decode2: "Off"
+  Decode3: "Off"
+  Decode4: "Off"
+  Decode5: "Off"
+  Decode6: "Off"
+  Decode7: "Off"
+  Decode8: "Off"
+  DisplayPTTID: "Off"
+  EmergencyAlarmAck: "Off"
+  GPSSystem: "None"
+  GroupList: "None"
+  InCallCriteria: "Follow Admit Criteria"
+  LoneWorker: "Off"
+  Power: "High"
+  Privacy: "None"
+  PrivacyNumber: "0"
+  PrivateCallConfirmed: "Off"
+  QtReverse: "180"
+  ReceiveGPSInfo: "Off"
+  RepeaterSlot: "1"
+  ReverseBurst: "On"
+  RxOnly: "Off"
+  RxRefFrequency: "Low"
+  RxSignallingSystem: "Off"
+  ScanList: "None"
+  SendGPSInfo: "Off"
+  Squelch: "Normal"
+  Tot: "180"
+  TotRekeyDelay: "0"
+  TxRefFrequency: "Low"
+  TxSignallingSystem: "Off"
+  Vox: "Off"
